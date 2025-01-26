@@ -7,7 +7,7 @@ def mismos_caracteres(lista):
 
     for palabra in lista:
         # Se ordenan alfabeticamente los caracteres de cada palabra para generar una clave única para cada grupo
-        
+
         clave = "".join(sorted(palabra))
         # Se verifica si ya existe un grupio con la misma clave
         if clave in grupos:
@@ -20,8 +20,9 @@ def mismos_caracteres(lista):
     for palabras in grupos.values():
         if len(palabras) > 1:
             resultado.extend(palabras)
-    
+
     return resultado
+
 
 # Ejemplo de uso
 entrada = ["amor", "roma", "perro", "sapo", "paso", "sapa"]

@@ -10,6 +10,7 @@ def es_primo(numero):
             return False
     return True
 
+
 def filtrar_primos(lista):
     if not isinstance(lista, list):
         raise ValueError("El valor ingresado no es una lista.")
@@ -17,7 +18,7 @@ def filtrar_primos(lista):
 
 
 # Ejemplo de uso
-numeros = [1, 2,3, 4, 5, 6, 7, 8, 9, 10]
+numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 print(filtrar_primos(numeros))
 
 try:
@@ -29,4 +30,4 @@ try:
 except ValueError as exc:
     print(exc)
 
-print(filtrar_primos((1,2,3,4,5)))
+print(filtrar_primos((1, 2, 3, 4, 5)))
