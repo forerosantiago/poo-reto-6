@@ -1,4 +1,7 @@
 def mismos_caracteres(lista):
+
+    if not isinstance(lista, list):
+        raise ValueError("El valor ingresado no es una lista.")
     # Se crea un diccionario para las palabras con los mismos caracteres
     grupos = {}
 
@@ -24,3 +27,8 @@ def mismos_caracteres(lista):
 entrada = ["amor", "roma", "perro", "sapo", "paso", "sapa"]
 
 print(mismos_caracteres(entrada))
+
+try:
+    mismos_caracteres("amor")
+except ValueError as exc:
+    print(exc)
